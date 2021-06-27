@@ -272,15 +272,9 @@ if ros_version == '2':
 
 # get FastRTPS version
 fastrtps_version = ''
-if not ros2_distro:
-    # grab the version installed system wise
-    fastrtps_version = subprocess.check_output(
-        "ldconfig -v 2>/dev/null | grep libfastrtps", shell=True).decode("utf-8").strip().split('so.')[-1]
-else:
-    # grab the version of the ros-<ros_distro>-fastrtps package
-    fastrtps_version = re.search(r'Version:\s*([\dd.]+)', subprocess.check_output(
-        "dpkg -s ros-" + ros2_distro + "-fastrtps 2>/dev/null | grep -i version", shell=True).decode("utf-8").strip()).group(1)
-
+# grab the version installed system wise
+fastrtps_version = subprocess.check_output(
+    "ldconfig -v 2>/dev/null | grep libfastrtps", shell=True).decode("utf-8").strip().split('so.')[-1]
 
 # If nothing specified it's generated both
 if agent == False and client == False:
