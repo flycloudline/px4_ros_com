@@ -344,6 +344,9 @@ rtps:
     msg: AirspeedWind
   - id: 159
     msg: EstimatorEventFlags
+  - id: 160
+    msg: Horizon
+    receive: true
   - alias: ActuatorControls
     id: 170
     msg: ActuatorControls0
