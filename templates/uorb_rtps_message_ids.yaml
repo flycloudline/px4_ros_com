@@ -346,7 +346,6 @@ rtps:
     msg: EstimatorEventFlags
   - id: 160
     msg: Horizon
-    receive: true
   - id: 161
     msg: EstimatorBaroBias
   - id: 162
