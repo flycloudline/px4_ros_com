@@ -89,8 +89,7 @@ target_link_libraries(frame_transforms Eigen3::Eigen ${geometry_msgs_LIBRARIES} 
 
 # Add microRTPS agent
 add_executable(micrortps_agent ${MICRORTPS_AGENT_FILES})
-ament_target_dependencies(micrortps_agent fastcdr fastrtps rclcpp)
-target_link_libraries(micrortps_agent fastcdr fastrtps ${rclcpp_LIBRARIES})
+target_link_libraries(micrortps_agent fastrtps fastcdr)
 
 # Add examples
 custom_executable(examples/listeners sensor_combined_listener)
