@@ -347,6 +347,14 @@ rtps:
   - id: 160
     msg: Horizon
     receive: true
+  - id: 161
+    msg: EstimatorBaroBias
+  - id: 162
+    msg: InternalCombustionEngineStatus
+  - id: 163
+    msg: CameraStatus
+  - id: 164
+    msg: Event
   - alias: ActuatorControls
     id: 170
     msg: ActuatorControls0
