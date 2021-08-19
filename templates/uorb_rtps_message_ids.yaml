@@ -140,6 +140,7 @@ rtps:
   - id: 65
     msg: SensorCombined
     send: true
+    receive: true
   - id: 66
     msg: SensorCorrection
   - id: 67
@@ -187,6 +188,7 @@ rtps:
   - id: 87
     msg: VehicleAttitude
     send: true
+    receive: true
   - id: 88
     msg: VehicleAttitudeSetpoint
   - id: 89
@@ -246,6 +248,7 @@ rtps:
   - id: 112
     msg: VehicleAngularVelocity
     send: true
+    receive: true
   - id: 113
     msg: VehicleAcceleration
   - id: 115
@@ -342,6 +345,14 @@ rtps:
   - id: 159
     msg: EstimatorEventFlags
   - id: 160
+    msg: Horizon
+  - id: 161
+    msg: EstimatorBaroBias
+  - id: 162
+    msg: InternalCombustionEngineStatus
+  - id: 163
+    msg: CameraStatus
+  - id: 164
     msg: Event
   - id: 161
     msg: EstimatorBaroBias
@@ -352,108 +363,108 @@ rtps:
   - id: 164
     msg: Horizon 
   - alias: ActuatorControls
-    id: 180
+    id: 170
     msg: ActuatorControls0
   - alias: ActuatorControls
-    id: 181
+    id: 171
     msg: ActuatorControls1
   - alias: ActuatorControls
-    id: 182
+    id: 172
     msg: ActuatorControls2
   - alias: ActuatorControls
-    id: 183
+    id: 173
     msg: ActuatorControls3
   - alias: ActuatorControls
-    id: 184
+    id: 174
     msg: ActuatorControlsVirtualFw
   - alias: ActuatorControls
-    id: 185
+    id: 175
     msg: ActuatorControlsVirtualMc
   - alias: VehicleAttitudeSetpoint
-    id: 186
+    id: 176
     msg: McVirtualAttitudeSetpoint
   - alias: VehicleAttitudeSetpoint
-    id: 187
+    id: 177
     msg: FwVirtualAttitudeSetpoint
   - alias: VehicleAttitude
-    id: 188
+    id: 178
     msg: VehicleAttitudeGroundtruth
   - alias: VehicleGlobalPosition
-    id: 189
+    id: 179
     msg: VehicleGlobalPositionGroundtruth
   - alias: VehicleLocalPosition
-    id: 190
+    id: 180
     msg: VehicleLocalPositionGroundtruth
   - alias: VehicleOdometry
-    id: 191
+    id: 181
     msg: VehicleMocapOdometry
     receive: true
   - alias: VehicleOdometry
-    id: 192
+    id: 182
     msg: VehicleVisualOdometry
     receive: true
   - alias: VehicleTrajectoryWaypoint
-    id: 193
+    id: 183
     msg: VehicleTrajectoryWaypointDesired
     send: true
   - alias: ObstacleDistance
-    id: 194
+    id: 184
     msg: ObstacleDistanceFused
   - alias: VehicleAttitude
-    id: 195
+    id: 185
     msg: VehicleVisionAttitude
   - alias: VehicleLocalPositionSetpoint
-    id: 196
+    id: 186
     msg: TrajectorySetpoint
     receive: true
   - alias: CameraTrigger
-    id: 197
+    id: 187
     msg: CameraTriggerSecondary
   - alias: VehicleAngularVelocity
-    id: 198
+    id: 188
     msg: VehicleAngularVelocityGroundtruth
   - alias: VehicleOdometry
-    id: 199
+    id: 189
     msg: EstimatorVisualOdometryAligned
   - alias: EstimatorInnovations
-    id: 200
+    id: 190
     msg: EstimatorInnovationVariances
   - alias: EstimatorInnovations
-    id: 201
+    id: 191
     msg: EstimatorInnovationTestRatios
   - alias: OrbTest
-    id: 202
+    id: 192
     msg: OrbMultitest
   - alias: OrbTestMedium
-    id: 203
+    id: 193
     msg: OrbTestMediumMulti
   - alias: OrbTestMedium
-    id: 204
+    id: 194
     msg: OrbTestMediumQueue
   - alias: OrbTestMedium
-    id: 205
+    id: 195
     msg: OrbTestMediumQueuePoll
   - alias: OrbTestMedium
-    id: 206
+    id: 196
     msg: OrbTestMediumWrapAround
   - alias: VehicleLocalPosition
-    id: 207
+    id: 197
     msg: EstimatorLocalPosition
   - alias: VehicleGlobalPosition
-    id: 208
+    id: 198
     msg: EstimatorGlobalPosition
   - alias: VehicleAttitude
-    id: 209
+    id: 199
     msg: EstimatorAttitude
   - alias: VehicleOdometry
-    id: 210
+    id: 200
     msg: EstimatorOdometry
   - alias: ActuatorControls
-    id: 211
+    id: 201
     msg: ActuatorControls4
   - alias: ActuatorControls
-    id: 212
+    id: 202
     msg: ActuatorControls5
   - alias: Wind
-    id: 213
+    id: 203
     msg: EstimatorWind
