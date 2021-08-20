@@ -349,6 +349,8 @@ rtps:
     msg: InternalCombustionEngineStatus
   - id: 163
     msg: CameraStatus
+  - id: 164
+    msg: Horizon
   - alias: ActuatorControls
     id: 180
     msg: ActuatorControls0
